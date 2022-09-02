@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Energy Conversion Technologies: Fundamentals</title>
+<meta name="author" content="Leo Lue"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal.js/dist/theme/leolue.css" id="theme"/>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<script src="../../reveal.js/plugin/zoom/zoom.js"></script>
+<script src="../../reveal.js/plugin/notes/notes.js"></script>
+<script src="../../reveal.js/plugin/search/search.js"></script>
+<script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+<!---script src="../../reveal.js/plugin/highlight/highlight.js"></script--->
+<script src="./captions.js"></script>
+
+<script src="../../reveal.js-plugins/menu/menu.js"></script>
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
+
+
+<script src="../../reveal.js-plugins/audio-slideshow/plugin.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/recorder.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
+
+<section>
+<section id="slide-orgb66e31d">
+<h2 id="orgb66e31d">Navigation instructions</h2>
+<ul>
+<li>Press <i class="fa fa-bars"></i> at the bottom
+left corner of the page to open a menu.
+<ul>
+<li>Jump to any slide within this presentation to clicking its title.</li>
+<li>Press <i class="fa fa-external-link-alt"></i> to
+navigate to another presentation.</li>
+
+</ul></li>
+<li>Press <a class="hide-on-pdf" onclick="document.location =
+  '?print-pdf';" id="PrintButton"><i class="fa fa-print"></i></a> to
+"print" a *.pdf of the presentation.</li>
+<li>Press <a onclick="showCaptions()" id="PrintButton"><i class="fa fa-closed-captioning"></i></a>
+to open a written transcript of the audio in the slides.</li>
+<li>Press the <code>SPACE</code> key to progress forward in the presentation.</li>
+<li>Use the <code>UP</code> / <code>DOWN</code> / <code>LEFT</code> / <code>RIGHT</code> arrow keys or the arrows in
+the bottom right corner of the page to navigate the presentation.</li>
+
+</ul>
+
+
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgb192677">
+<h2 id="orgb192677">Energy Conversion Technologies</h2>
+<h2>Fundamentals</h2>
+<h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
+
+<aside class="notes">
+<p>
+Hello,
+</p>
+
+<p>
+My name is Dr Leo Lue, and I am an academic in the Department of
+Chemical and Process Engineering.  In this lecture, we will cover some
+of the 
+</p>
+
+
+<p>
+management and methods.  This lecture will give an overview of the
+module aims and contents.
+</p>
+
+</aside>
+
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgcd094d3">
+<h2 id="orgcd094d3">Overview</h2>
+<ul>
+<li>Sustainable development</li>
+<li>Exergy analysis</li>
+<li>Limitations of thermodynamic analysis</li>
+<li>Summary</li>
+
+</ul>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgbc6fb32">
+<h2 id="orgbc6fb32">Sustainable development</h2>
+<img src="https://careers.snclavalin.com/img/162cbbc0-3164-421e-4046-08da127bf31c">
+
+<aside class="notes">
+nil
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgebf4ba0">
+<h2 id="orgebf4ba0">How can we quantify sustainability?</h2>
+<ul>
+<li>ecological footprint
+<ul>
+<li>carbon footprint</li>
+<li>water footprint</li>
+<li>land footprint</li>
+
+</ul></li>
+<li>monetary cost</li>
+<li>exergy</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+So given the agreed goal of sustainable development, we need to have
+some quantitative measure of sustainability.
+</p>
+
+<p>
+Our values guide the manner we behave.  Similarly, the methods by
+which we value resources (e.g., clean water and air, minerals, fossil
+fuels, solar insolation, etc.) profoundly influences the ways in which
+we choose to conserve or exploit them and even affects what we
+consider as a resource.
+</p>
+
+<p>
+The economic or monetary value of a resource provides a useful measure
+by which everything can be compared on a "uniform", quantitative
+basis.  It accounts for many factors, including the benefit of using
+the resource, the difficulty of its usage, its availability and
+demand, etc.  However, by its intrinsic nature, it is largely
+subjective and susceptible to manipulation (e.g., speculation in
+commodity markets, changes in government policy, etc.).
+</p>
+
+<p>
+The use of concepts, such as carbon foot print or energy usage,
+provide a useful indication of sustainability, however, these
+typically only address a specific issues, such as climate change, in
+limited circumstances and do not easily generalize to situations where
+multiple factors may be important (e.g., comparing the relative
+benefits of using nuclear power or the quantifying the relative
+advantages of recycling over waste to energy through incineration).
+</p>
+
+<p>
+Measures of sustainability
+</p>
+
+
+<p>
+These ecological footprints can be traced back to the idea of carrying
+capacity of land.
+</p>
+
+<p>
+Each of these measures only applies to a particular aspect of
+environmental impact.
+</p>
+
+<p>
+What is required of a good measure of sustainability?
+</p>
+
+<p>
+The monetary cost provides a robust, transferable quantitative measure
+of environmental impact.  It reflects our ability to enact change,
+which
+</p>
+
+<p>
+Thermodynamic approaches offer an objective and "universal" measure of
+the value of resources and the cost of various processes, through the
+concept of lost work or free energy.  The value of a resource is
+directly related to its "work" (exergy) content, and the cost of a
+process is the amount of lost work it incurs.  Thermodynamic
+approaches have been used successfully to assess and improve the
+sustainability of industrial processes.  However, a purely
+thermodynamic analysis has many shortcomings.  For example, there is
+no consideration of the worth of time, such as the loss of value of
+resources that degrade or the time requirement for transformations to
+occur.  In addition, they do not consider the availability and
+efficiency of technologies to perform particular transformations
+(e.g., if there is not technology available to extract it).
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgf3a5adc">
+<h2 id="orgf3a5adc">Do we need to conserve energy?</h2>
+<blockquote>
+<b>First law of thermodynamics:</b>
+Energy cannot be created or destroyed, but it can transform from one
+type to another.
+</blockquote>
+
+<div>
+\begin{align*}
+d(E + {\rm KE} + {\rm PE})
+&= \delta Q - \delta W 
+\end{align*}
+
+</div>
+
+
+<aside class="notes">
+<p>
+The first law of thermodynamics guarantees that energy is conserved.
+</p>
+
+<p>
+Energy can take on many different forms, and these forms can be
+converted to one another; however, energy can neither be created or
+destroyed.
+</p>
+
+<p>
+So the statement that we need to because about energy use does not
+really make sense.  However, we know that there is something to that
+statement that rings true.  We do not live in a world with
+inexhaustible resources.
+</p>
+
+<p>
+So the question is what is the real problem?
+</p>
+
+<p>
+What is a renewable resource?
+</p>
+
+<p>
+:frag (grow shrink roll-in fade-out none)
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org95b0aae">
+<h2 id="org95b0aae">Second law of thermodynamics</h2>
+<blockquote>
+<b>Clausius statement:</b>
+No process is possible whose sole result is the transfer of heat from
+a body of lower temperature to a body of higher temperature.
+</blockquote>
+
+<blockquote>
+<b>Kelvin-Planck statement:</b>
+No process is possible in which the sole result is the absorption of
+heat from a reservoir and its complete conversion into work.
+</blockquote>
+<br>
+
+
+<div>
+\begin{align*}
+dS \ge \frac{\delta Q}{T}
+\end{align*}
+
+</div>
+
+<img src="https://aatishb.com/entropy/media/onewaytotwoway.gif">
+
+
+<aside class="notes">
+<p>
+The second law of thermodynamics is interesting in that it is one of
+the few laws of physics that is not reversible.  Most physical
+dynamical equations, such as Newton's laws of motion or even the
+Schrodinger equation, are the same moving forward and backward in
+time.  This is not the case for the second law of thermodynamics,
+which does show a difference.
+</p>
+
+<p>
+While different forms of energy can be converted to each other, some
+</p>
+
+<p>
+In this sense, not all forms of energy have equal "value".
+</p>
+
+<p>
+This provides an
+</p>
+
+
+<p>
+While different forms of energy can be converted to each other, some
+forms of energy
+</p>
+
+<p>
+In this sense, not all forms of energy have equal "value".
+</p>
+
+<p>
+This provides an
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org4407c9e">
+<h2 id="org4407c9e">Combined first and second laws</h2>
+<div>
+\begin{align*}
+dE &\le TdS - pdV - \delta W' + \sum_\alpha \mu_\alpha dN_\alpha
+\end{align*}
+
+</div>
+
+
+<p>
+For a reversible transformation:
+</p>
+<div>
+\begin{align*}
+dE &= TdS - pdV - \delta W' + \sum_\alpha \mu_\alpha dN_\alpha
+\end{align*}
+
+</div>
+
+
+<aside class="notes">
+<p>
+Combining the first and second laws of thermodynamics, we arrive at
+this inequality.
+</p>
+
+<p>
+Work is a form of energy that can be perfectly converted to any other
+form of energy.
+</p>
+
+
+<p>
+We see that every 
+</p>
+
+
+<p>
+From this expression, we see that the energy of the system
+can be con
+</p>
+
+<p>
+Work is a form of energy that can be perfectly converted to any other
+form of energy.  
+</p>
+
+<p>
+The difficulty with using this inequality
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org76b0da6">
+<h2 id="org76b0da6">Maximum entropy principle</h2>
+<div>
+\begin{align*}
+TdS &\ge dE + pdV + \delta W - \sum_\alpha \mu_\alpha dN_\alpha
+\end{align*}
+
+</div>
+
+<p>
+Holding \(E\), \(V\), and \(N_\alpha\) constant:
+</p>
+<div>
+\begin{align*}
+TdS &\ge \delta W
+\end{align*}
+
+</div>
+
+<aside class="notes">
+<p>
+We often hear that the second law of thermodynamics implies that
+entropy always increases.  This is quite true, and we have to be a bit
+more precise about what mean.
+</p>
+
+<p>
+The entropy of a system can be made to decrease by simply removing
+heat from it or by decreasing its volume.
+</p>
+
+<p>
+If we keep the total energy, volume, and amount of material within our
+system constant, then we see that
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org03ce596">
+<h2 id="org03ce596">Free energies and work</h2>
+<p>
+For \(G=E - TS + pV\):
+</p>
+<div>
+\begin{align*}
+dG &\le -SdT + Vdp + \delta W + \sum_\alpha \mu_\alpha dN_\alpha
+\end{align*}
+
+</div>
+
+<p>
+At constant \(T\), \(p\), and \(N_\alpha\):
+</p>
+<div>
+\begin{align*}
+dG \le \delta W
+\end{align*}
+
+</div>
+
+<aside class="notes">
+<p>
+It is extremely difficult to directly manipulate entropy.  In
+practical situations, temperature is usually a variable that is more
+natural for us to control.  We can swap the entropy for the
+temperature as an independent variable by performing a Legendre
+transform.  If we define the Gibbs free energy \(G\) as the energy minus
+the product of the temperature and entropy and add to it the product
+of the system pressure and volume, then we find the following
+inequality.
+</p>
+
+<p>
+The natural independent variables of the Gibbs free energy \(G\) are
+the temperature, pressure, and species amounts.  
+</p>
+
+<p>
+If we hold the temperature, pressure, and material in the system
+constant, then find that the change in the Gibbs free energy of the
+system is always less than or equal to the amount of non-expansion
+work that we extract from the system.
+</p>
+
+<p>
+This definition of the free energy is not unique.
+</p>
+
+
+<p>
+A system always tries to decrease its free energy.  The maximum work
+that can be extracted from a system is its free energy loss.  The
+minimum work required to perform a non-spontaneous transformation is
+the free energy gain.
+</p>
+
+<p>
+Exergy
+</p>
+
+<p>
+If we specify the environment, then
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org58b01f9">
+<h2 id="org58b01f9">We need to conserve Exergy!</h2>
+<aside class="notes">
+<p>
+So in summary, energy conservation is not important, as it is never
+lost.  Rather it just changes form.  Instead, what we really mean is
+that we need to conserve <b>exergy</b>.
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org7dbb2a0" data-audio-src="fundamentals/coffee.ogg">
+<h2 id="org7dbb2a0">Hot cup of coffee</h2>
+<img src="../figures/bitmap/coffee.png">
+
+<aside class="notes">
+<p>
+As a first example, let us consider the work content of a hot cup of
+coffee.  Let's assume that the cup contains 250 mL of coffee and take
+its initial temperature to be 60^&circ; C and the temperature of the
+surrounding air to be 20^&circ; C.  If left alone, we know that the
+coffee will eventually cool to 20 C, coming to thermal equilibrium
+with the surrounding air.  Using the properties of water, we estimate
+that the coffee will release a total of 42 kJ.  
+</p>
+
+<p>
+The cooling of the coffee is a spontaneous process, which will occur
+on its own.  According to our analysis, however, we know that this
+provides an opportunity to extract useful work.
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org759a8b4">
+<h2 id="org759a8b4">Hot cup of coffee: Extracting work</h2>
+<iframe height="270" width="500" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=56977&amp;code=dZ~vTgZpzChLCGzKRLpVenhLGMcb2xdpd" frameborder="0" allowfullscreen></iframe>
+<!--- img src="../figures/coffee_stirling.png" height="300" --->
+
+<aside class="notes">
+<p>
+If we get in the way of the natural cooling of the cup of coffee, then
+we can extract work from it.  As an example, we can use Stirling
+engine.  By forcing the heat released from the coffee to pass through
+the engine before dissipating into the environment.
+</p>
+
+<p>
+Not all the heat passing through an engine can be converted to work.
+This fraction is known as the efficiency of the engine.  The maximum
+theoretical efficiency is given by the Carnot cycle, and it depends on
+the temperature at which the heat enters the engine and the
+temperature in which the engine releases the unused heat.  The larger
+the temperature differential, the greater the theoretical efficiency.
+</p>
+
+<p>
+Let's assume that our Stirling engine has the maximum theoretical
+efficiency.  The Stirling engine receives heat from the hot cup of
+coffee, and it rejects the waste heat that it does not convert to work
+to the surrounding air.  As the coffee cools, the temperature at which
+the Stirling engine receives heat will slowly drop, and as a result,
+its efficiency will decrease.  Therefore, to determine the total
+amount of work that can be extracted over the entire cooling process,
+we need to integrate the efficiency with respect to the temperature of
+the coffee.
+</p>
+
+<p>
+This leads to the final expression here.  We recognize the first term
+in the expression for the work as the total enthalpy change of the
+coffee due to cooling.  As mentioned previously, this is about 42 kJ.
+The second term is the portion of this heat that cannot be converted
+to work, due to the second law of thermodynamics.
+</p>
+
+<p>
+For our 250 mL cup of coffee that started at 60^&circ; C, we find that
+we can potentially extract about 2.6 kJ of work, which is only about
+6.3% of the heat released by the coffee.  To put this into context, a
+AA alkaline battery contains about 14 kJ of energy.  So we see that
+five or six of these cups of coffee would be about the same as a
+single AA battery.
+</p>
+
+<p>
+In this analysis, we assumed that the Stirling engine ran with the
+maximum thermodynamic efficiency, so 2.6 kJ is the most we could ever
+expect.  The formula that we derived is applicable to any substance
+with a constant heat capacity and can be used to estimate its work
+value.  This is known as its thermal exergy and is only a property of
+the state of the material and its surroundings.
+</p>
+
+<p>
+In reality, the true efficiency will be less than this, due practical
+issues, such as friction in the moving parts of the engine, loss of
+heat from the sides of the engine, and other factors.  It has been
+quoted that the efficiency of low temperature differential Stirling
+engines is about a third of the Carnot efficiency.  There are other
+engines that can be used to extract work from heat, such as
+thermoelectric generators, each with their own efficiencies and
+optimal range of conditions in which they work.
+</p>
+
+</aside>
+
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgb527e7f">
+<h2 id="orgb527e7f">Heat exchanger</h2>
+<img src="../figures/vector/exergy_HE.svg">
+
+<p>
+Specific exergy:
+</p>
+<div>
+\begin{align*}
+B = C_p \left(T-T_0 - T_0\ln\frac{T}{T_0}\right)
+\end{align*}
+
+</div>
+
+<p>
+Energy balance:
+</p>
+<div>
+\begin{align*}
+\dot{m}_H C_p(T_{H1}-)
+\end{align*}
+
+</div>
+
+
+<aside class="notes">
+<p>
+In the previous example, we demonstrated that work can be extracted
+from the natural cooling of a hot cup of coffee.  If we just let the
+coffee cool by itself, then we will have lost all that potential work.
+Exergy is lost every time a transformation is allowed to naturally
+occur without trying to extract work from the process.  One example of
+this is the transfer of heat between two fluid streams in a
+counter-current heat exchanger.
+</p>
+
+
+<p>
+A hot liquid stream with a mass flowrate \dot{m}<sub>H</sub> and a heat capacity
+C<sub>p,H</sub> enters the heat exchanger at a temperature T<sub>H1</sub>.  This is
+used to heat a cold stream with a mass flowrate \dot{m}<sub>C</sub> and heat
+capacity C<sub>p,C</sub> from an initial temperature T<sub>C1</sub> to a target
+temperature of T<sub>C2</sub>.
+</p>
+
+<p>
+From an energy balance over the heat exchanger, we can determine the
+exit temperature of the hot stream.
+</p>
+
+
+
+
+<p>
+Now we will be examining
+the
+</p>
+
+
+<p>
+In this example, we will analyze the 
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org6124a72" data-audio-src="fundamentals/warmwaterorice.ogg">
+<h2 id="org6124a72">Warm water or ice?</h2>
+<img src="../figures/bitmap/water.png" style="margin-right:5px" height="300">
+<img src="../figures/bitmap/ice.png" style="margin-left:5px" height="300">
+
+<aside class="notes">
+<p>
+So now we have built a little intuition on the concept of exergy,
+let's consider a simple question that highlights the difference
+between exergy and energy.  We want to deliver hot liquid water at
+100^&circ; C, and we are given the choice of either starting with warm
+water at 60 C or ice at -20 C.
+</p>
+
+<p>
+Which will require less fuel?
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org93a7370" data-audio-src="fundamentals/warmwaterorice2.ogg">
+<h2 id="org93a7370">Warm water or ice: Exergy analysis</h2>
+<img src="../figures/exergy_water.png" style="margin-right:5px" height="300">
+
+<aside class="notes">
+<p>
+To get a clearer perspective of the problem, we plot the exergy of
+water as a function of temperature.  The black curve is the exergy of
+liquid water.  When the water is at ambient temperature, its exergy is
+zero, since it is at thermal equilibrium with its surroundings, and no
+work can be extracted from it.  As the temperature of the water
+increases from the environmental temperature of 20^&circ; C, its exergy
+increases.  This is expected, as it takes work to heat water.
+</p>
+
+<p>
+The black dotted line represents the exergy content for water at 60 C,
+and the red dotted line represents the exergy content of liquid water
+at 100 C.  So the minimum work required to heat liquid water from 60 C
+to 100 C is given by the distance between the red dotted line and the
+black dotted line, which is about 28.4 kJ/kg.
+</p>
+
+<p>
+What might be somewhat unexpected is that the exergy of water
+increases as we cool it below ambient temperature.  We can understand
+this if we take into account that it requires work to refrigerate
+things.  So the work it takes to cool water below ambient temperature
+can be thought of as being stored in it as exergy.
+</p>
+
+<p>
+The black curve continues to increase as the liquid water is cooled,
+until we reach 0 C, where it will start to freeze.  The solid blue
+curve shows the variation of the exergy of ice with temperature.  Note
+that there is a discontinuity between the black curve and the blue
+curve.  This represents the work required to freeze water.
+</p>
+
+<p>
+The exergy content of ice at -20 C is given by the blue dotted line.
+The work required to convert ice at this temperature to liquid water
+at 100 C is just the distance between the red dotted line and the blue
+dotted line, which is roughly 9.8 kJ/kg.  This should be compared to
+the 28.4 kJ/kg of work required for water at 60 C.  So in theory, we
+see that using ice will use about only a third of the fuel required by
+warm water.
+</p>
+
+<p>
+While exergy analysis tells us that we can potentially save fuel by
+using ice, it does not tell us how we can practically do this.  This
+requires ingenuity on our part.  Working with the ice, we can use a
+Stirling engine, as we did with the hot cup of coffee, to extract work
+as it is melting.  In this case, however, the engine will receive heat
+from the surrounding air and reject heat to the ice.  In principle, we
+can run the engine until the ice fully melts and also while the
+resulting melt water warms up from 0 C to the ambient temperature.
+From there, we can then heat the water with a heat pump which is
+powered by the work we obtained fro the melting of the ice.  If this
+process is run at full thermodynamic efficiency, it will take the
+temperature of the water up to over 80 C, where the blue dotted line
+intersects the black line in the exergy plot.  Then, the remaining
+required heating can be done through the use of additional fuel.
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org8ed46d5">
+<h2 id="org8ed46d5">Compressed air cylinder</h2>
+<img src="https://cdn.shopify.com/s/files/1/0255/1260/7822/products/5L-Compressed-Air-Cylinder-300-Bar-Charging-Kit-Hydrotech-Emmett-_-Stone-Country-Sports-Ltd-1651672134.jpg?v=1651672137" height=200>
+
+
+<aside class="notes">
+<p>
+How much work can we obtain from a 5 L cylinder of compressed air at
+300 bar?
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org4d2fc67">
+<h2 id="org4d2fc67">Desalination</h2>
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgbf62ec5">
+<h2 id="orgbf62ec5">Combustion of methane</h2>
+<div>
+\begin{equation*}
+{\rm CH}_4 + 2 {\rm O}_2 \longrightarrow
+{\rm CO}_2 + 2{\rm H_2O}
+\end{equation*}
+
+</div>
+
+<br>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">state</th>
+<th scope="col" class="org-right">\(\Delta H_f\)</th>
+<th scope="col" class="org-right">\(\Delta G_f\)</th>
+</tr>
+
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">kJ mol\(^{-1}\)</th>
+<th scope="col" class="org-right">kJ mol\(^{-1}\)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">methane</td>
+<td class="org-left">CH<sub>4</sub></td>
+<td class="org-left">g</td>
+<td class="org-right">-74.520</td>
+<td class="org-right">-50.460</td>
+</tr>
+
+<tr>
+<td class="org-left">carbon dioxide</td>
+<td class="org-left">CO<sub>2</sub></td>
+<td class="org-left">g</td>
+<td class="org-right">-393.509</td>
+<td class="org-right">-394.359</td>
+</tr>
+
+<tr>
+<td class="org-left">oxygen</td>
+<td class="org-left">O<sub>2</sub></td>
+<td class="org-left">g</td>
+<td class="org-right">0.000</td>
+<td class="org-right">0.000</td>
+</tr>
+
+<tr>
+<td class="org-left">water</td>
+<td class="org-left">H<sub>2</sub> O</td>
+<td class="org-left">g</td>
+<td class="org-right">-241.818</td>
+<td class="org-right">-228.572</td>
+</tr>
+
+<tr>
+<td class="org-left">water</td>
+<td class="org-left">H<sub>2</sub> O</td>
+<td class="org-left">l</td>
+<td class="org-right">-285.830</td>
+<td class="org-right">-237.129</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<aside class="notes">
+<p>
+Although in the development of exergy which was presented in the
+previous lecture, we did not explicitly mention multicomponent systems
+or possible chemical reactions that may occur within a system, the
+derivations are sufficiently general that they also apply to these
+situations.
+</p>
+
+<p>
+To demonstrate how we can analyze a system undergoing a chemical
+reaction, let us consider the amount of exergy that can obtained from
+the oxidation of methane, which is given by the following reaction
+</p>
+<div>
+\begin{equation}
+{\rm CH}_4 + 2 {\rm O}_2 \longrightarrow
+{\rm CO}_2 + 2{\rm H_2O}
+\end{equation}
+
+</div>
+<p>
+In order to compute the exergy change, we need to determine the
+enthalpy \(\Delta H_{\rm rxn}\) and entropy \(\Delta S_{\rm rxn}\) change
+of this reaction.  Specifically, the exergy of reaction \(\Delta B_{\rm
+  rxn}\) is given by
+</p>
+<div>
+\begin{equation*}
+\Delta B_{\rm rxn} = \Delta H_{\rm rxn} - T_0 \Delta S_{\rm rxn}
+\end{equation*}
+
+</div>
+<p>
+We can do this with data for the enthalpy and Gibbs free energy of
+formation, such as that given in Table~\ref{tab:formation}.
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgc690c0b">
+<h2 id="orgc690c0b">General analysis</h2>
+<img src="../figures/vector/exergy_open.svg" height="300">
+
+<div>
+\begin{align*}
+\dot{W}
+&=
+-\frac{\partial\phi}{\partial t}
++ \sum_\alpha \dot{N}_\alpha \mu_{0,\alpha}
++ \sum_k \dot{N}_k B_k
+\\
+B &= H - T_0 S
+\\
+\phi
+&= 
+d{U} 
+- T_0 d{S}
++ p_0 d{V}
+- \sum_\alpha \mu_{0,\alpha} dN_{\alpha}
+\end{align*}
+
+</div>
+
+
+
+<aside class="notes">
+<p>
+In a previous lecture, we examined several examples where we estimated
+the maximum amount of work that could be obtained from a system.
+These calculations were ad hoc, meaning that we had to examine each
+system individually, on a case by case basis.  There is also the worry
+that perhaps we were not "clever" enough to think of a better way of
+extracting the work.  In this lecture, we will develop a general
+method of computing the maximum amount of work that can be obtained
+from a process.  Along the way, we will introduce the concepts of
+availability and exergy.
+</p>
+
+<ul>
+<li><a href="file:///home/mjksill/Strathclyde/Teaching/EthicsSustainability/handouts/maxwork.tex">maximum work</a></li>
+
+</ul>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org220eb60">
+<h2 id="org220eb60">Exergy / availability</h2>
+<ul>
+<li>Availability: the maximum amount of work that can be extracted from
+a closed system</li>
+<li>Exergy: the maximum amount of work that can be extracted from a
+flowing system</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+We have shown how to determine the maximum work that can be extracted
+from a system which is interacting with its surroundings, including
+materials flow streams.
+</p>
+
+<p>
+What we want to do here is to use this
+expression to determine the maximum amount of work that we can extract
+from a system, which we will call its exergy.  This can then be used
+to quantify the value of the system.
+</p>
+
+<p>
+One manner to value a material is by the maximum amount of work that
+we can extract from it, which is known as its exergy or availability,
+and we denote this with the symbol \(\phi\).  A material's exergy
+depends not only on its properties but also on the details of its
+surroundings.
+</p>
+
+<p>
+So let's consider a system that is at pressure \(p\) and temperature
+\(T\), and is composed of a variety of species \(\alpha\) in amount
+\(N_\alpha\).
+</p>
+
+
+<p>
+To calculate the maximum amount of work we can extract from the
+system, we consider a process where it exchanges heat, volume, and
+material with the surrounding environment until it has the same
+temperature, pressure and composition as the surrounding environment.
+</p>
+
+<p>
+We divide this process into two distinct steps.  In the first step, we
+exchange heat between the system and the environment, as well as
+expand or contract the system so that its temperature and pressure are
+equal to that of the environment.  During this process, no material is
+exchanged between the system and the environment.  So its composition
+will not be the same as the external environment.
+</p>
+
+<p>
+In the second step, material is exchanged between the system and the
+environment until the composition of the system is identical to that
+of its surroundings.  This may involve chemical reactions of
+components in the system.
+</p>
+
+<p>
+This two step process divides the exergy into two contributions:
+physical exergy, which corresponds to the work extracted from the
+first step, and chemical exergy, which corresponds to the work extracted
+in the second step.
+</p>
+
+
+<p>
+Physical exergy:
+</p>
+
+
+
+<p>
+chemical exergy
+</p>
+
+
+<p>
+The maximum work \(\delta W\) that can be extracted from this system
+when it undergoes some kind of change is given by this equation:
+</p>
+
+<p>
+which is equal to the negative change of its internal energy Plus the
+system environment pressure x the change in its volume - the system
+environment temperature times the changing is entropy material Flows
+in and out that's a various streams k then we also have this
+additional term where are the actual additional work that we can
+extract is given by the enthalpy of that stream - the environmental
+temperature times the molar entropy of the stream times the amount of
+the stream that is entering or exiting the system.
+</p>
+
+
+
+
+
+
+
+<p>
+We want to determine the maximum amount of work
+</p>
+
+
+<p>
+do now is to assign this work
+of value to a specific system and in that manner
+</p>
+
+
+<p>
+develop a manner to quantify the value of
+a system or material by 
+</p>
+
+
+
+<p>
+However, we are interested in trying to assign
+this potential to do work to a material.
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orge96b5d4">
+<h2 id="orge96b5d4">Limitations of Exergy analysis</h2>
+<ul>
+<li>Only tells us what can be achieved, not how to achieve it.</li>
+<li>Technology may not exist to perform required transformations</li>
+<li>Neglects time</li>
+<li>Assumes that the ``environment'' (reference state) is constant.</li>
+<li>Neglects economic or social factors</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+Exergy is an extremely useful concept in assessing the sustainability
+of a process; however, as with all things, there are several
+limitations to exergy analysis.  Even though
+</p>
+
+
+<ul>
+<li>dependent on the technical available</li>
+<li>pathways and their efficiencies</li>
+<li>Dependent on the environment of the system</li>
+
+</ul>
+
+
+<p>
+Let us emphasize that exergy analysis gives us the maximum work that
+we can extract from a spontaneous process
+</p>
+
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgca31071">
+<h2 id="orgca31071">Future directions for research</h2>
+<aside class="notes">
+nil
+</aside>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-org75549e3">
+<h2 id="org75549e3">Summary</h2>
+<ul>
+<li>exergy, not energy, is the</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+In this lecture, we examine
+</p>
+
+<p>
+One of the key points to take away is that work can, in principle, be
+extracted from any process that occurs spontaneously (i.e., a process
+that will occur on its own).  The maximum work that can be obtained
+from this process is the decrease in the free energy.
+</p>
+
+<p>
+The reverse is also true.  Non-spontaneous processes, that is
+processes that will not occur by themselves, can be made to happen
+by applying work.  The minimum amount of work that is required is the
+increase in free energy.
+</p>
+
+
+<p>
+Finally, we discussed the limitations of exergy analysis.  These
+</p>
+
+<p>
+Another
+</p>
+
+<p>
+In the next lecture, we will perform exergy analysis on some different
+systems.
+</p>
+
+</aside>
+<div class="slide-footer"></div>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal.js/dist/reveal.js"></script>
+<script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+<script src="../../reveal.js/plugin/zoom/zoom.js"></script>
+<script src="../../reveal.js/plugin/notes/notes.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealMarkdown, RevealZoom, RevealNotes],
+width:"100%", height:"100%",
+minScale:1, maxScale:1,
+rolling_links:true, keyboard:true, overview:true,
+center:false,
+plugins: [ RevealMarkdown, RevealMenu, RevealAudioSlideshow, RevealAudioRecorder]
+});
+
+</script>
+</body>
+</html>
