@@ -13,6 +13,17 @@
 
 <link rel="stylesheet" href="../../reveal.js-fork/dist/theme/leolue.css" id="theme"/>
 
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal.js-fork/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
@@ -40,8 +51,8 @@
 
 
 <section>
-<section id="slide-org11bb25c">
-<h2 id="org11bb25c">Navigation instructions</h2>
+<section id="slide-org934849c">
+<h2 id="org934849c">Navigation instructions</h2>
 <ul>
 <li>Press <i class="fa fa-bars"></i> at the bottom
 left corner of the page to open a menu.
@@ -63,8 +74,8 @@ the bottom right corner of the page to navigate the presentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-orgd6d118a">
-<h2 id="orgd6d118a">Energy Conversion Technologies</h2>
+<section id="slide-orgd8a69bf">
+<h2 id="orgd8a69bf">Energy Conversion Technologies</h2>
 <h2>Applications of Exergy Analysis</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
@@ -84,8 +95,8 @@ to analyze the sustainability of a process.
 </section>
 </section>
 <section>
-<section id="slide-org4620a4f">
-<h2 id="org4620a4f">Overview</h2>
+<section id="slide-org9f6b9d2">
+<h2 id="org9f6b9d2">Overview</h2>
 <ul>
 <li>Work loss in a heat exchanger</li>
 <li>Work from evaporation</li>
@@ -106,8 +117,8 @@ processes can be analyzed thermodynamically.
 </section>
 </section>
 <section>
-<section id="slide-org312a6d4">
-<h2 id="org312a6d4">Heat exchanger</h2>
+<section id="slide-org0f32ca6">
+<h2 id="org0f32ca6">Heat exchanger</h2>
 <iframe allow="autoplay; fullscreen" height="500" width="1120" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=56993&amp;code=ea~HPdvp2JrlUsDjeMegD6Le2BVVyI2pe" frameborder="0" allowfullscreen></iframe>
 
 
@@ -156,8 +167,8 @@ In this example, we will analyze the
 </section>
 </section>
 <section>
-<section id="slide-orgbb32665">
-<h2 id="orgbb32665">Evaporation</h2>
+<section id="slide-org0d59cbb">
+<h2 id="org0d59cbb">Evaporation</h2>
 <iframe allow="autoplay; fullscreen" height="500" width="1120" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=56994&amp;code=dY~VjSAFAqVnINfmYkEOAUO8s6JrHWJFc" frameborder="0" allowfullscreen></iframe>
 
 <aside class="notes">
@@ -180,8 +191,8 @@ In this example, we will analyze the
 </section>
 </section>
 <section>
-<section id="slide-org5ab0353">
-<h2 id="org5ab0353">Direct air capture of carbon dioxide</h2>
+<section id="slide-org5e13a0d">
+<h2 id="org5e13a0d">Direct air capture of carbon dioxide</h2>
 <iframe allow="autoplay; fullscreen" height="500" width="1120" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=56995&amp;code=dQ~LLA7a6GuIoNHJ4jXP46le9KPSdO89f" frameborder="0" allowfullscreen></iframe>
 
 <aside class="notes">
@@ -192,8 +203,16 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org97a7c3a">
-<h2 id="org97a7c3a">Limitations of Exergy analysis</h2>
+<section id="slide-org46fb437">
+<h2 id="org46fb437">Chemical reactions: Oxidation of methane</h2>
+<iframe allow="autoplay; fullscreen" height="500" width="1120" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=57164&amp;code=e0~6uwB9ANAiwzQhskRaDGTxDAxLD7F9h" frameborder="0" allowfullscreen></iframe>
+
+<div class="slide-footer"></div>
+</section>
+</section>
+<section>
+<section id="slide-orgfb0638c">
+<h2 id="orgfb0638c">Limitations of Exergy analysis</h2>
 <ul>
 <li>Only tells us what can be achieved, not how to achieve it.</li>
 <li>Technology may not exist to perform required transformations</li>
@@ -241,8 +260,8 @@ we can extract from a spontaneous process
 </section>
 </section>
 <section>
-<section id="slide-orga51dd5a">
-<h2 id="orga51dd5a">Summary</h2>
+<section id="slide-orgc3b48b4">
+<h2 id="orgc3b48b4">Summary</h2>
 <ul>
 <li>Work loss in a heat exchanger</li>
 <li>Work from evaporation</li>
